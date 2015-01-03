@@ -38,7 +38,7 @@
 #include "pins_arduino.h"
 #include "twi.h"
 
-static volatile uint8_t twi_state;
+volatile uint8_t twi_state;
 static volatile uint8_t twi_slarw;
 static volatile uint8_t twi_sendStop;			// should the transaction end with a stop
 static volatile uint8_t twi_inRepStart;			// in the middle of a repeated start
